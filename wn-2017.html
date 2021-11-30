@@ -194,7 +194,7 @@ function loop() {
 
 if (!ctx.running) return;
 
-ctx.globalCompositeOperation = 'source-over';
+ctx.globalCompositeOperation = 'source-out';
 ctx.fillStyle = 'rgba(8,5,16,0.4)';
 ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 ctx.globalCompositeOperation = 'lighter';
