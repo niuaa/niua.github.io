@@ -195,7 +195,7 @@ function loop() {
 if (!ctx.running) return;
 
 ctx.globalCompositeOperation = 'source-out';
-ctx.fillStyle = 'rgba(8,5,16,0.4)';
+ctx.fillStyle = 'rgba(0,0,0,0)';
 ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 ctx.globalCompositeOperation = 'lighter';
 ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
@@ -297,7 +297,7 @@ form.appendChild(form.input);
 document.body.appendChild(form);
 }
 
-buffer.ctx.fillStyle = 'rgba(8,5,16)';
+buffer.ctx.fillStyle = 'rgba(0,0,0)';
 buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
 
 buffer.ctx.drawImage(canvas,
