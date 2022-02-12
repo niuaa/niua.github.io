@@ -1,0 +1,33 @@
+<head><title>测试<title></head>
+<body>
+  <img data-original="https://i0.hdslb.com/bfs/album/0b61ea0033b6ac5ffbb796e9d047bed5db769328.jpg" alt="云免" class="img-responsive img-rounded lazy">
+  <script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
+    
+  </script>
+</body>
