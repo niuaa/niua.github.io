@@ -1,0 +1,1 @@
+(function(){var audioArr=['renlairenwang','chiling','qingtian','airencuoguo'];var random=Math.floor(Math.random()*10)+1;var audio=new Audio("https://files.cnblogs.com/files/yanggb/"+(random>4?"renlairenwang.js":audioArr[random-1]+".js"));audio.play();audio.volume=1;audio.loop=true})();
