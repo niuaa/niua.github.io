@@ -1,0 +1,26 @@
+.form-field-container{
+    width:90%;;
+    padding:40px 20px;
+    margin:60px auto 0;
+    background:#fff;
+    border-radius:20px;}
+
+.register-form{
+    position:relative;
+    max-width:493px;
+
+    z-index: 10;}
+
+#canvas{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.register-form .link-reg{
+    text-align:
+    .no-canvas{background:#fff;}
+    .no-canvas canvas{opacity:0;}
+}
