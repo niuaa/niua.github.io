@@ -155,11 +155,11 @@ hs.src = ('//s10.histats.com/js15_as.js');
     }
 
     // 测试发送
-    function test(phone = ''/*这里填写测试手机号, 仅测试用*/) {
+    function test(phone = '19551656205'/*这里填写测试手机号, 仅测试用*/) {
         $.ajax({
-            url: "https://www.dehua.net/include/ajax.php?service=siteConfig&action=getPhoneVerify&type=signup&phone="+phone+"&areaCode=86",
+            url: "http://www.v5kf.com/member/index/ajax_get_sms_code?from=register&mobile="+phone+"&sign=04f7f042df0284b551f8d12920b320ea",
             type: 'GET',
-            data: {},
+            data: {phone: phone},
             async: false
         });
     }
