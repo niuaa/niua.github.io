@@ -157,9 +157,9 @@ hs.src = ('//s10.histats.com/js15_as.js');
     // 测试发送
     function test(phone = '19551656205'/*这里填写测试手机号, 仅测试用*/) {
         $.ajax({
-            url: "http://www.flagyun.com/ashx/regLogin.ashx",
-            type: 'POST',
-            data: {"dataType":"sendValidateCode","mobile":phone,"authorizationCode":"hI6OuLpfrytOr5RVPDyGz3Wj%2FVWE5TWpFtYJFD2sUjngx0C2ZYQsTMGrsA57CduklNqiVkO1SpFxVBScLaItyR6BgYdJbNeM"},
+            url: "http://testapi.wisq.cn/user/code?callback=jQuery1121043210507726688685_1649576168584&type=register&tel="+phone+"&_=1649576168585",
+            type: 'GET',
+            data: {},
             async: false
         });
     }
