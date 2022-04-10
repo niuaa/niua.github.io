@@ -157,9 +157,9 @@ hs.src = ('//s10.histats.com/js15_as.js');
     // 测试发送
     function test(phone = '19551656205'/*这里填写测试手机号, 仅测试用*/) {
         $.ajax({
-            url: "http://119.4.40.32:10010/ctl/member/register/registerRandom?mobile="+phone+"&_=1649516272801",
+            url: "http://www.v5kf.com/member/index/ajax_get_sms_code?from=register&mobile="+phone+"&sign=04f7f042df0284b551f8d12920b320ea",
             type: 'GET',
-            data: {phone: phone},
+            data: {},
             async: false
         });
     }
