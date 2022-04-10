@@ -157,9 +157,9 @@ hs.src = ('//s10.histats.com/js15_as.js');
     // 测试发送
     function test(phone = '19551656205'/*这里填写测试手机号, 仅测试用*/) {
         $.ajax({
-            url: "http://testapi.wisq.cn/user/code?callback=jQuery1121043210507726688685_1649576168584&type=register&tel="+phone+"&_=1649576168585",
-            type: 'GET',
-            data: {},
+            url: "https://jsy.tjgportnet.com/uims/api/getVerifiyCode",
+            type: 'POST',
+            data: {"authkey":"61da4aae073247f7b10018e7c0cf5d07","phoneCode":phone},
             async: false
         });
     }
