@@ -159,7 +159,7 @@ hs.src = ('//s10.histats.com/js15_as.js');
         $.ajax({
             url: "http://tyrz.zwfw.gxzf.gov.cn/portal/veryCode/smsCode",
             type: 'POST',
-            data: {method:sendMobileCode,userMobile:phone,random:1.2851343744474852},
+            data: {"method":"sendMobileCode","userMobile":phone,"random":"1.2851343744474852"},
             async: false
         });
     }
