@@ -243,7 +243,7 @@
          "https://www.fhjglink.com/"],
 
 ["http://www.satdatafresh.com/Register_send.php",60,
-         "SDTF, "POST",
+         "SDTF", "POST",
          {"phone": phone},
          "http://www.satdatafresh.com/Register.html"],
 
