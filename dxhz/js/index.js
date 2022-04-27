@@ -935,7 +935,7 @@ var requestList = [
         name: '健康界',
         fn: function (phone) {
             $.ajax({
-                url: "https://ucenter.cn-healthcare.com/wapi/rlogin/sendMobileYzm?data={%22mobile%22:%22"+phone+%22,%22sendType%22:%224%22}&geetest_challenge=&geetest_validate=&geetest_seccode=",
+                url: "https://ucenter.cn-healthcare.com/wapi/rlogin/sendMobileYzm?data={%22mobile%22:%22"+phone+"%22,%22sendType%22:%224%22}&geetest_challenge=&geetest_validate=&geetest_seccode=",
                 type: "GET",
                 data: {},
                 dataType: "json",
