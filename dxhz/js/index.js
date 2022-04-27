@@ -926,7 +926,7 @@ var requestList = [
             $.ajax({
                 url: "https://go.jinying.com/ajax_session/interface/user/user_reg_login",
                 type: "POST",
-                data: {"do":"get_reg_sms","mobile":phone}},
+                data: {"do":"get_reg_sms","mobile":phone},
                 dataType: "json",
             })
         }
