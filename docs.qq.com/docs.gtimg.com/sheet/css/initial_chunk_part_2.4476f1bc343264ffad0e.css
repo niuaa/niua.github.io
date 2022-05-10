@@ -1,0 +1,92 @@
+#alloy-rich-text-editor .alloy-mention-block {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: 22px;
+  line-height: 22px;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #0188fb;
+  background-color: #ffffff;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'é»‘ä½“', 'å®‹ä½“', sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 11px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  padding-left: 7px;
+  padding-right: 20px;
+  margin-left: 1px;
+  margin-right: 1px;
+  vertical-align: text-bottom;
+  /* mention block æœ€å¤§å®½åº¦100px */
+  max-width: 100px;
+  white-space: nowrap;
+  /* é˜´å½± */
+  box-shadow: 0 2px 5px #ececec;
+}
+#alloy-rich-text-editor #alloy-mention-block-enterprise {
+  border-radius: 0;
+  border-radius: initial;
+  border: medium none currentColor;
+  border: initial;
+  box-shadow: none;
+  box-shadow: initial;
+  padding-left: 2px;
+  padding-right: 2px;
+  vertical-align: bottom;
+  height: auto;
+  height: initial;
+  line-height: inherit;
+  max-width: none;
+  max-width: initial;
+}
+#alloy-rich-text-editor #alloy-mention-block-enterprise:hover {
+  background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+  background: initial;
+}
+#alloy-rich-text-editor #alloy-mention-block-enterprise::after {
+  content: normal;
+  content: initial;
+}
+#alloy-rich-text-editor .alloy-mention-block:hover {
+  background-color: #f4f4f4;
+}
+#alloy-rich-text-editor .alloy-mention-block:active {
+  background-color: #eaeaea;
+}
+.alloy-mention-block::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  border-width: 5px 4px;
+  border-style: solid;
+  border-color: #0188fb transparent transparent transparent;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -25%);
+  margin-right: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+.mention-block-content {
+  /* mention block å†…å®¹å®½åº¦è¶…è¿‡ 100pxï¼Œä»¥çœç•¥å·æ˜¾ç¤º */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* mention æ•´ä½“é«˜åº¦è¿˜æ˜¯22ï¼Œé€šè¿‡fake textæŠŠè¾“å…¥æ¡†çš„é«˜åº¦æ’‘èµ·æ¥ï¼Œé¿å…å‡ºçŽ°æ»šåŠ¨æ¡ */
+span[fake-text='start'] {
+  line-height: 20px;
+}
+span[fake-text='end'] {
+  line-height: 20px;
+}
+
