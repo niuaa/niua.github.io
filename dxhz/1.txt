@@ -1,6 +1,7 @@
 ["https://www.decathlon.com.cn/zh/ajax/rest/model/atg/userprofiling/ProfileActor/send-mobile-verification-code",30,
          "迪卡侬", "POST", 
-          {"countryCode": "CN", "mobile": phone}, "https://www.decathlon.com.cn/zh/create"],
+          {"countryCode": "CN", "mobile": phone}, 
+          "https://www.decathlon.com.cn/zh/create"],
 
 ["https://www.guhai.com.cn/front/member/sendSmsCode",60,
          "股海网", "POST",
